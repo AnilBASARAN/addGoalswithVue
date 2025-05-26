@@ -22,7 +22,7 @@
       <button :style="{margin:'1rem'}" @click="addGoal" >Add Goal</button>
       <button @click="resetGoals" >Reset</button>
       <p v-if="goals.length === 0" >No goals have been added yet - please start adding some!</p>
-      <ul>
+      <ul v-else>
         <li v-for="goal in goals" >{{goal}}</li>
       </ul>
     </section>
